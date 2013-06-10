@@ -1,12 +1,19 @@
 [submodule "bundle/vim-powershell"]
 	path = bundle/vim-powershell
 	url = https://github.com/PProvost/vim-ps1.git
+  ignore = dirty
 [submodule "bundle/slimv"]
 	path = bundle/slimv
 	url = https://github.com/vim-scripts/slimv.vim.git
+  ignore = dirty
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = https://github.com/ervandew/supertab.git
+  ignore = dirty
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+  ignore = dirty
+[submodule "bundle/latex"]
+	path = bundle/latex
+	url = git://git.code.sf.net/p/vim-latex/vim-latex
