@@ -20,3 +20,6 @@
 [submodule "bundle/minibufexplorer"]
 	path = bundle/minibufexplorer
 	url = git://github.com/fholgado/minibufexpl.vim.git
+[submodule "bundle/solarized"]
+	path = bundle/solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
