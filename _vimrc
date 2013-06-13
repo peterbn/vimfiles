@@ -78,5 +78,21 @@ set sidescrolloff=15
 set sidescroll=1
 
 " ================ Colors ===========================
-set background=light
-colorscheme solarized
+set showmatch     " set show matching parenthesis
+if has("gui_running")
+  set background=light
+  colorscheme solarized
+  syntax on
+else
+  set background=dark
+endif
+
+
+" ================ File type specifics===============
+let g:tex_flavor="latex"
+
+" NERDTree setup ftw
+" Toggle on F1 (instead of useless help)
+map <F1> :NERDTreeToggle<CR>
+" Open NERDTree if vim is started without file arguments
+autocmd vimenter * if !argc() | NERDTree | endif
