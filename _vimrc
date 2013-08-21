@@ -40,6 +40,7 @@ set shellslash
 " exist in the background without being in a window.
 " http://items.sjbach.com/319/configuring-vim-right
 set hidden
+set backspace=indent,eol,start
 
 
 " ================ Turn Off Swap Files ==============
