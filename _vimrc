@@ -35,6 +35,8 @@ endfunction
 set guifont=Consolas:h11:cANSI "nicer font
 set guioptions-=T "remove toolbar
 set shellslash
+set ruler
+set cursorline
 
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
