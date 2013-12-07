@@ -32,7 +32,9 @@ function MyDiff()
   silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
 endfunction
 
-set guifont=Consolas:h11:cANSI "nicer font
+if has("win32")
+  set guifont=Consolas:h11:cANSI "nicer font
+endif
 set guioptions-=T "remove toolbar
 set shellslash
 set ruler
