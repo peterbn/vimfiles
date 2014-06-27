@@ -46,6 +46,8 @@ set cursorline
 set hidden
 set backspace=indent,eol,start
 
+let mapleader=","
+
 
 " ================ Turn Off Swap Files ==============
 
@@ -100,4 +102,5 @@ let g:tex_flavor="latex"
 " Toggle on F1 (instead of useless help)
 map <F1> :NERDTreeToggle<CR>
 " Open NERDTree if vim is started without file arguments
-autocmd vimenter * if !argc() | NERDTree | endif
+"autocmd vimenter * if !argc() | NERDTree | endif
+let NERDTreeHijackNetrw=1

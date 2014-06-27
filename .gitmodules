@@ -41,3 +41,9 @@
 [submodule "bundle/vim-classpath"]
 	path = bundle/vim-classpath
 	url = https://github.com/tpope/vim-classpath.git
+[submodule "bundle/vim-gradle"]
+	path = bundle/vim-gradle
+	url = https://github.com/tfnico/vim-gradle.git
+[submodule "bundle\\vim-json"]
+	path = bundle\\vim-json
+	url = https://github.com/elzr/vim-json.git
