@@ -97,6 +97,8 @@ endif
 
 " ================ File type specifics===============
 let g:tex_flavor="latex"
+autocmd Filetype html,xml,xsl source ~/vimfiles/bundle/userscripts/scripts/closetag.vim
+
 
 " NERDTree setup ftw
 " Toggle on F1 (instead of useless help)
@@ -104,3 +106,5 @@ map <F1> :NERDTreeToggle<CR>
 " Open NERDTree if vim is started without file arguments
 "autocmd vimenter * if !argc() | NERDTree | endif
 let NERDTreeHijackNetrw=1
+
+
