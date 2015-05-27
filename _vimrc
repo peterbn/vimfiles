@@ -1,7 +1,25 @@
 set nocompatible
 
-execute pathogen#infect()
+" Required Vundle setup
+filetype off
+set runtimepath+=~/.vim/bundle/vundle
+call vundle#rc()
 
+" Load vundle as a starter
+Bundle 'gmarik/vundle'
+
+Bundle 'vim-latex/vim-latex'
+Bunde 'fholgado/minibufexpl.vim'
+Bunde 'scrooloose/nerdcommenter'
+Bunde 'scrooloose/nerdtree'
+Bunde 'altercation/vim-colors-solarized'
+Bunde 'ervandew/supertab'
+Bunde 'tpope/vim-classpath'
+Bunde 'guns/vim-clojure-static'
+Bunde 'tpope/vim-fireplace.'
+Bunde 'tfnico/vim-gradle'
+Bunde 'PProvost/vim-ps1'
+Bunde 'guns/vim-sexp'
 
 "source $VIMRUNTIME/vimrc_example.vim
 " source $VIMRUNTIME/mswin.vim
