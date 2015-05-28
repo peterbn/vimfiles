@@ -4,30 +4,32 @@ set runtimepath+=~/.vim
 " Required Vundle setup
 filetype off
 set runtimepath+=~/.vim/bundle/vundle
-call vundle#rc()
+call vundle#begin()
 
 " Load vundle as a starter
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 " Make Vim better!
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'fholgado/minibufexpl.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'ervandew/supertab'
-Bundle 'guns/vim-sexp'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'fholgado/minibufexpl.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'ervandew/supertab'
+Plugin 'guns/vim-sexp'
 
 " Add stuff for specific kinds of files
 "LaTeX stuff
-Bundle 'vim-latex/vim-latex' 
+Plugin 'vim-latex/vim-latex' 
 "Clojure stuff
-Bundle 'tpope/vim-classpath'
-Bundle 'guns/vim-clojure-static'
-Bundle 'tpope/vim-fireplace'
+Plugin 'tpope/vim-classpath'
+Plugin 'guns/vim-clojure-static'
+Plugin 'tpope/vim-fireplace'
 "Gradle
-Bundle 'tfnico/vim-gradle'
+Plugin 'tfnico/vim-gradle'
 "Powershell
-Bundle 'PProvost/vim-ps1'
+Plugin 'PProvost/vim-ps1'
+
+call vundle#end()
 
 "source $VIMRUNTIME/vimrc_example.vim
 " source $VIMRUNTIME/mswin.vim
