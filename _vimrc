@@ -1,4 +1,5 @@
 set nocompatible
+set runtimepath+=~/.vim
 
 " Required Vundle setup
 filetype off
@@ -8,25 +9,32 @@ call vundle#rc()
 " Load vundle as a starter
 Bundle 'gmarik/vundle'
 
-Bundle 'vim-latex/vim-latex'
-Bunde 'fholgado/minibufexpl.vim'
-Bunde 'scrooloose/nerdcommenter'
-Bunde 'scrooloose/nerdtree'
-Bunde 'altercation/vim-colors-solarized'
-Bunde 'ervandew/supertab'
-Bunde 'tpope/vim-classpath'
-Bunde 'guns/vim-clojure-static'
-Bunde 'tpope/vim-fireplace.'
-Bunde 'tfnico/vim-gradle'
-Bunde 'PProvost/vim-ps1'
-Bunde 'guns/vim-sexp'
+" Make Vim better!
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'fholgado/minibufexpl.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'ervandew/supertab'
+Bundle 'guns/vim-sexp'
+
+" Add stuff for specific kinds of files
+"LaTeX stuff
+Bundle 'vim-latex/vim-latex' 
+"Clojure stuff
+Bundle 'tpope/vim-classpath'
+Bundle 'guns/vim-clojure-static'
+Bundle 'tpope/vim-fireplace'
+"Gradle
+Bundle 'tfnico/vim-gradle'
+"Powershell
+Bundle 'PProvost/vim-ps1'
 
 "source $VIMRUNTIME/vimrc_example.vim
 " source $VIMRUNTIME/mswin.vim
 " behave mswin
 
 set diffexpr=MyDiff()
-function MyDiff()
+function! MyDiff()
   let opt = '-a --binary '
   if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
   if &diffopt =~ 'iwhite' | let opt = opt . '-b ' | endif
@@ -106,7 +114,7 @@ set sidescroll=1
 set showmatch     " set show matching parenthesis
 if has("gui_running")
   set background=light
-  colorscheme solarized
+  silent! colorscheme solarized
   syntax on
 else
   set background=dark
@@ -115,7 +123,7 @@ endif
 
 " ================ File type specifics===============
 let g:tex_flavor="latex"
-autocmd Filetype html,xml,xsl source ~/vimfiles/bundle/userscripts/scripts/closetag.vim
+"autocmd Filetype html,xml,xsl source ~/vimfiles/bundle/userscripts/scripts/closetag.vim
 
 
 " NERDTree setup ftw
@@ -124,5 +132,3 @@ map <F1> :NERDTreeToggle<CR>
 " Open NERDTree if vim is started without file arguments
 "autocmd vimenter * if !argc() | NERDTree | endif
 let NERDTreeHijackNetrw=1
-
-
