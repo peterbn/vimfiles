@@ -1,0 +1,3 @@
+Execute this line to set up vundle before running vim!
+
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
